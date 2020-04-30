@@ -5,7 +5,6 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 import Amplify, { API} from 'aws-amplify';
-import amplify from './aws-exports';
 //Amplify.configure(amplify);
 
 

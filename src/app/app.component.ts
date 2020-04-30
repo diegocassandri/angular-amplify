@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import Amplify, { API } from 'aws-amplify';
+
 
 @Component({
   selector: 'app-root',
@@ -8,12 +8,9 @@ import Amplify, { API } from 'aws-amplify';
 })
 export class AppComponent {
   title = 'amplify-app';
-  notes = [];
+  
 
   ngOnInit() {
-    API.get('notes', '/notes', {}).then(data => {
-      this.notes = data;
-      console.log(data);
-    });
+ 
   }
 }
